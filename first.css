@@ -1,0 +1,9 @@
+form label a {
+    width: 170px;
+    display: -webkit-inline-box;
+}
+
+input {
+    border: 1;
+    border-bottom: 2px solid grey;
+}

@@ -5,26 +5,93 @@
     <title>ITMD 361: Fundamentals of Web Development</title>
 </head>
 <body>
-<main id="content">
-  <form method="get" action="#null">
-    <h1>Get Our Newsletter</h1>
-    <p>
-      Sign up to be first to receive the lastest news
-      and breaking alerts right in your inbox.
-    </p>
-    <ol>
-      <li id="input-email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$" />
-      </li>
-      <li id="input-age-verification">
-        <input type="checkbox" id="age-verification" name="age-verification" value="18" />
-        <label for="age-verification">I am 18 years of age or older and there is no denying that this is true</label>
-      </li>
-      <li id="input-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe" />
-      </li>
-    </ol>
+<h1>Volunteer Signup</h1>
+    <h3>My Information</h3>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+        <fieldset>
+             <div>
+                <label>Enter First Name:
+                    <input type="text" name="first_name_entry">
+                </label>
+            </div>
+          <div>
+                <label>Enter Last Name:
+                    <input type="text" name="last_name_entry">
+                </label>
+            </div>
+            <div>
+                <label>Enter Telephone Number:
+                    <input type="tel" name="phone_entry">
+                </label>
+            </div>
+            <div>
+                <label>Enter Email Address:
+                    <input type="email" name="email_entry">
+                </label>
+            </div>
+             <div>
+                <label for"Sex_field">Enter your Sex: </label>
+                <input type="radio" name="Sex_field" value="Male">Male
+                <input type="radio" name="Sex_field" value="Female">Female
+            </div>
+ <div>
+                <label>Enter your Age:
+                    <select name="age_entry">
+                        <option value="under 12">under 12</option>
+                        <option value="12-17">18-24</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-40">26-40</option>
+                        <option value="41-65">41-65</option>
+                        <option value="66-99">66-99</option>
+                        <option value="100-122">100-122</option>
+                    </select>
+                </label>
+            </div>
+
+        </fieldset>
+         <h3>My Availability</h3>
+        <fieldset>
+            <label for="available_field">Days Available: </label>
+        
+        <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Sunday">
+                <label for="available">Sunday</label>
+            </div>
+            <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Monday">
+                <label for="available">Monday</label>
+            </div>
+            <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Tuesday">
+                <label for="available">Tuesday</label>
+            </div>
+            <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Wednesday">
+                <label for="available">Wednesday</label>
+            </div>
+            <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Thursday">
+                <label for="available">Thursday</label>
+            </div>
+            <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Friday">
+                <label for="available">Friday</label>
+            </div>
+            <div>
+                <input id="checkBox" type="checkbox" name="available_field[]" value="Saturday">
+                <label for="available">Saturday</label>
+            </div>
+            
+             <div>
+                <label>Enter comments here </label>
+                <textarea name="comment_entry" rows="10" cols="50"></textarea>
+            </div>
+    </fieldset>
+        
+       <input type="submit" value="Sent">
+        
+        <input type="hidden" name="hidden_entry" value="Darthseid(Jared McVey)">
+
   </form>
 </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
