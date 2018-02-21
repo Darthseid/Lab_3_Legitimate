@@ -11,32 +11,32 @@
         <fieldset>
              <div>
                 <label>Enter First Name:
-                    <input type="text" name="first_name_entry">
+                    <input type="text" name="first_name_field">
                 </label>
             </div>
           <div>
                 <label>Enter Last Name:
-                    <input type="text" name="last_name_entry">
+                    <input type="text" name="last_name_field">
                 </label>
             </div>
             <div>
                 <label>Enter Telephone Number:
-                    <input type="tel" name="phone_entry">
+                    <input type="tel" name="phone_field">
                 </label>
             </div>
             <div>
                 <label>Enter Email Address:
-                    <input type="email" name="email_entry">
+                    <input type="email" name="email_field">
                 </label>
             </div>
              <div>
-                <label> for"Sex_field">Enter your Sex: </label>
-                <input type="radio" name="Sex_field" value="Male">Male
-                <input type="radio" name="Sex_field" value="Female">Female
+                <label> Enter your Sex: </label>
+                <input type="radio" name="gender_field" value="Male">Male
+                <input type="radio" name="gender_field" value="Female">Female
             </div>
  <div>
                 <label>Enter your Age:
-                  	<select name="age_field">
+<select name="age_field">
 						<option value="under 18">Under 18</option>
 						<option value="18-24">18-24</option>
 						<option value="25-34">25-34</option>
@@ -50,50 +50,30 @@
 
         </fieldset>
          <h3>My Availability</h3>
-        <fieldset>
-            <label for="available_field">Days Available: </label>
-        
-        <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Sunday">
-                <label for="available">Sunday</label>
-            </div>
-            <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Monday">
-                <label for="available">Monday</label>
-            </div>
-            <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Tuesday">
-                <label for="available">Tuesday</label>
-            </div>
-            <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Wednesday">
-                <label for="available">Wednesday</label>
-            </div>
-            <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Thursday">
-                <label for="available">Thursday</label>
-            </div>
-            <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Friday">
-                <label for="available">Friday</label>
-            </div>
-            <div>
-                <input id="checkBox" type="checkbox" name="available_field[]" value="Saturday">
-                <label for="available">Saturday</label>
-            </div>
-            
-             <div>
-                <label>Enter comments here </label>
-                <textarea name="comment_entry" rows="10" cols="50"></textarea>
-            </div>
-    </fieldset>
+      <fieldset>
+				<legend>My Availability</legend>
+				<p> Availability:
+					<label>Sunday <input type="checkbox" name="available_field[]" value="sunday"></label>
+					<label>Monday <input type="checkbox" name="available_field[]" value="monday"></label>
+					<label>Tuesday <input type="checkbox" name="available_field[]" value="tuesday"></label>
+					<label>Wednesday <input type="checkbox" name="available_field[]" value="wednesday"></label>
+					<label>Thursday <input type="checkbox" name="available_field[]" value="thursday"></label>
+					<label>Friday <input type="checkbox" name="available_field[]" value="friday"></label>
+					<label>Saturday <input type="checkbox" name="available_field[]" value="saturday"></label>
+				</p>
+				<label for="comment_area">Comments</label>
+				<textarea cols="50" rows="15" name="comments_field" id="comment_area"></textarea>
+				<p>
+					<input type="hidden" name="hidden_field" value="jmcvey1">
+				</p>
+			</fieldset>
         
        <input type="submit" value="Sent">
-        
-        <input type="hidden" name="hidden_entry" value="Darthseid(Jared McVey)">
+
 
   </form>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/site.js"></script> 
 </body>
 </html>
+
