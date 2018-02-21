@@ -50,29 +50,26 @@
 
         </fieldset>
          <h3>My Availability</h3>
-        <fieldset>
-         <input style="display:none">   <label> input name = "available_field">Days Available: </label>
-        
-        <div style="display:none">
-	 <label>input name = "Days Availability:"  </label>
-      <input type="checkbox" id="available_field_1">Sunday
-      <input type="checkbox" id="available_field_2">Monday
-      <input type="checkbox" id="available_field_3">Tuesday
-      <input type="checkbox" id="available_field_4">Wednesday
-      <input type="checkbox" id="available_field_5">Thursday
-      <input type="checkbox" id="available_field_6">Friday
-      <input type="checkbox" id="available_field_7">Saturday
-	  </div>
-            
-             <div>
-                <label>Enter comments here </label>
-                <textarea name="comment_field" rows="10" cols="50"></textarea>
-            </div>
-    </fieldset>
+      <fieldset>
+				<legend>My Availability</legend>
+				<p> Availability:
+					<label>Sunday <input type="checkbox" name="available_field[]" value="sunday"></label>
+					<label>Monday <input type="checkbox" name="available_field[]" value="monday"></label>
+					<label>Tuesday <input type="checkbox" name="available_field[]" value="tuesday"></label>
+					<label>Wednesday <input type="checkbox" name="available_field[]" value="wednesday"></label>
+					<label>Thursday <input type="checkbox" name="available_field[]" value="thursday"></label>
+					<label>Friday <input type="checkbox" name="available_field[]" value="friday"></label>
+					<label>Saturday <input type="checkbox" name="available_field[]" value="saturday"></label>
+				</p>
+				<label for="comment_area">Comments</label>
+				<textarea cols="50" rows="15" name="comments_field" id="comment_area"></textarea>
+				<p>
+					<input type="hidden" name="hidden_field" value="jmcvey1">
+				</p>
+			</fieldset>
         
        <input type="submit" value="Sent">
-        
-        <input type="hidden" name="hidden_field" value="jmcvey1">
+
 
   </form>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
